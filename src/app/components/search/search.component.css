@@ -15,8 +15,13 @@
 
 .mat-tree {
   width: 50%;
+  margin-left: 2em;
 }
 
-.mat-tree-node:focus {
+.mat-tree-node[aria-expanded~=true] {
   background-color: #ebecfb;
 }
+
+/* .mat-tree-node:focus {
+  background-color: #ebecfb;
+} */
