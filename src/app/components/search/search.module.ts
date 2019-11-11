@@ -47,12 +47,14 @@ import { MatTreeModule } from "@angular/material/tree";
 
 import { SearchComponent } from "./search.component";
 
-const routes: Routes = [{ path: "menu1", component: SearchComponent }];
+const routes: Routes = [
+  { path: '', component: SearchComponent },
+  { path: "menu1", component: SearchComponent }];
 
 @NgModule({
   declarations: [SearchComponent],
   exports: [
-    SearchComponent
+    
   ],
   imports: [
     // BrowserAnimationsModule,
