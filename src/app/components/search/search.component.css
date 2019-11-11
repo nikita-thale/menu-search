@@ -1,0 +1,22 @@
+.search-container {
+  position: absolute;
+  /* top: 0; */
+  /* bottom: 0; */
+  right: 0;
+  width: 85%;
+  margin: 0;
+  padding: 0;
+  /* z-index: 9998; */
+}
+
+.mat-tree-node {
+  border: 1px rgba(0, 0, 0, 0.17) solid;
+}
+
+.mat-tree {
+  width: 50%;
+}
+
+.mat-tree-node:focus {
+  background-color: #ebecfb;
+}
