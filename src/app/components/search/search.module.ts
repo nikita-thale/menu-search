@@ -1,6 +1,4 @@
 import { NgModule } from "@angular/core";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 
 import { A11yModule } from "@angular/cdk/a11y";
@@ -48,14 +46,13 @@ import { MatTreeModule } from "@angular/material/tree";
 import { SearchComponent } from "./search.component";
 
 const routes: Routes = [
-  { path: '', component: SearchComponent },
-  { path: "menu1", component: SearchComponent }];
+  { path: "", component: SearchComponent },
+  { path: "menu1", component: SearchComponent }
+];
 
 @NgModule({
   declarations: [SearchComponent],
-  exports: [
-    
-  ],
+  exports: [],
   imports: [
     // BrowserAnimationsModule,
 

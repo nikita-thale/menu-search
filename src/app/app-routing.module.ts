@@ -3,7 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { MenuModule } from './components/menu/menu.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'menu1', pathMatch: 'full' },
+  // { path: '', redirectTo: 'menu1', pathMatch: 'full' },
   {
     path: 'menu1',
     // loadChildren: './components/search/search.module#SearchModule'
@@ -12,8 +12,8 @@ const routes: Routes = [
   {
     path: 'menu2',
     // loadChildren: './components/menu/menu.module#MenuModule',
-    // loadChildren: () => import('./components/menu/menu.module').then(m => m.MenuModule)
-    loadChildren: () => MenuModule
+    loadChildren: () => import('./components/menu/menu.module').then(m => m.MenuModule)
+    // loadChildren: () => MenuModule
   }
 ];
 
